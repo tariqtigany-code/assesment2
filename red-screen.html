@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroStation 2 | Support System</title>
+    <link rel="stylesheet" type="text/css" href="c_style.css">
+    <style>
+        .red-error-box {
+            background: radial-gradient(circle at center, #7f1d1d 0%, #450a0a 60%, #020617 100%);
+            border: 3px solid #ef4444;
+            box-shadow: 0 0 35px rgba(239, 68, 68, 0.4);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 700px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #020617;
+            border: 1px solid #ef4444;
+            color: #fff;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #39ff14;
+            box-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo1.jpg" alt="PS2 Logo" class="logo-img">
+            <div class="logo">RetroStation 2</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="free-games.html">Free PC Games</a></li>
+                <li><a href="summary.html">Game Summary</a></li>
+                <li><a href="red-screen.html" class="active">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        
+        <div class="red-error-box">
+            <h1 style="color: #f87171; font-size: 28px; text-transform: uppercase; letter-spacing: 2px;">
+                ⚠️ Please Insert a PlayStation 2 Format Disc
+            </h1>
+            <p style="color: #fca5a5; font-size: 15px; margin-bottom: 30px;">
+                Console error detected? Don't worry! Send your issue report directly to our tech team below.
+            </p>
+
+            <form action="#" method="POST" style="text-align: left;">
+                <label style="color: #fca5a5; font-size: 14px;">Your Name:</label>
+                <input type="text" class="form-input" placeholder="Enter your full name" required>
+
+                <label style="color: #fca5a5; font-size: 14px;">Your Email:</label>
+                <input type="email" class="form-input" placeholder="name@example.com" required>
+
+                <label style="color: #fca5a5; font-size: 14px;">Describe the Bug/Error:</label>
+                <textarea class="form-input" rows="4" placeholder="What technical support do you need with your console or game download?" required></textarea>
+
+                <button type="submit" class="action-btn" style="background: linear-gradient(90deg, #ef4444 0%, #991b1b 100%); color: white; margin-top: 15px; border: none; cursor: pointer;">
+                    Launch Support Signal
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RetroStation 2. Premium Retro Web Project.</p>
+    </footer>
+
+</body>
+</html>
